@@ -1,0 +1,144 @@
+:root {
+	--width: 35vw;
+	--border-radius: 0.5rem;
+	--box-shadow: 0 0.5rem hsl(0, 55%, 62%);
+	--color: hsl(0, 0%, 97%);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: hsl(0, 100%, 74%);
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	background-image: url("bg-intro-desktop.png");
+}
+
+.container {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	height: 100vh;
+	align-items: center;
+}
+
+.header h1 {
+	font-weight: 700;
+	/* padding-bottom: 1rem; */
+}
+
+.header {
+	color: var(--color);
+	padding: 3rem;
+}
+
+.form-here {
+	width: auto;
+	padding: 2.5em;
+}
+
+.blue {
+	border-radius: var(--border-radius);
+	color: var(--color);
+	background-color: hsl(248, 32%, 49%);
+	box-shadow: var(--box-shadow);
+	padding: 0.8rem 3rem;
+	margin-bottom: 1.5rem;
+	width: var(--width);
+}
+
+#bold {
+	font-weight: 600;
+}
+
+.form {
+	background-color: var(--color);
+	border-radius: var(--border-radius);
+	padding: 2rem;
+	width: var(--width);
+	box-shadow: var(--box-shadow);
+}
+
+.form-field {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-field input {
+	padding: 0.6rem 1.5rem;
+	margin-bottom: 1rem;
+	border: 1px solid hsl(246, 25%, 77%);
+	border-radius: var(--border-radius);
+}
+
+.form-field button {
+	background-color: hsl(154, 59%, 51%);
+	padding: 1rem;
+	margin-bottom: 1rem;
+	border: 1px solid hsl(154, 59%, 51%);
+	color: var(--color);
+	box-shadow: 0 0.3rem hsl(150, 49%, 45%);
+	border-radius: var(--border-radius);
+}
+
+.small {
+	font-size: 0.7rem;
+	margin-left: 1rem;
+	color: hsl(246, 25%, 77%);
+}
+
+.small a {
+	text-decoration: none;
+	color: hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width: 400px) {
+	body {
+		background-image: url("bg-intro-mobile.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-size: 0.9rem;
+		padding-top: 6rem;
+		/* padding-bottom: 2.5rem; */
+	}
+
+	.container {
+		flex-direction: column;
+	}
+
+	.header h1 {
+		font-weight: 600;
+		font-size: 1.5rem;
+		padding-bottom: 1rem;
+		text-align: center;
+	}
+
+	.header {
+		color: var(--color);
+		padding: 0.5rem;
+		text-align: center;
+	}
+
+	.blue {
+		border-radius: var(--border-radius);
+		color: var(--color);
+		/* background-color: hsl(248, 32%, 49%); */
+		box-shadow: var(--box-shadow);
+		padding: 1rem 2.2rem;
+		margin-bottom: 1.5rem;
+		width: 100%;
+		text-align: center;
+	}
+
+	.form {
+		/* background-color: var(--color); */
+		border-radius: var(--border-radius);
+		padding: 2rem;
+		width: 100%;
+		box-shadow: var(--box-shadow);
+	}
+}
